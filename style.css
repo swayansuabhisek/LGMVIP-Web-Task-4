@@ -1,0 +1,95 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.id{
+    color: rgba(41, 212, 78, 0.836);
+    background-color: rgb(0, 0, 0);
+    font-size: 50 px;
+}
+.container{
+    height: 100vh;
+    width: 100v;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, rgba(214, 177, 9, 0.5), rgb(177, 9, 9));
+    flex-direction: column;
+    background-image: url(img/mult.jpg);
+    background-size: cover;
+}
+
+.calculator{
+    display: grid;
+    box-shadow: 4px 4px rgba(0,0,0,0.25), inset 4px 4px rgba(0,0,0,0.25);
+    padding: 20px;
+    border-radius: 20px;
+    background: rgba(231, 231, 231, 0.18);
+    background-color: rgb(132, 125, 228);
+    
+}
+.welcome{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(61, 57, 57);
+    letter-spacing: 1mm;
+    text-align: center;
+    align-self: center;
+    margin: 20px auto;
+    
+}
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+}
+input{
+    font-size: 2rem;
+    text-align: end;
+    margin: 10px auto;
+    height: 75px;
+    border-radius: 10px;
+    border: none;
+    padding: 0px 10px;
+    box-shadow: 2px 5px 5px rgba(21, 22, 58, 0.5),
+                -2px -2px rgba(0,0,0,0.1);
+    outline: none;
+    
+}
+.buttons button{
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    margin:10px 5px;
+    padding: 10px;
+    outline: none;
+    border: none;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    box-shadow: 4px 5px 5px rgba(21, 11, 116, 0.5),
+                -1px -1px rgba(51, 50, 50, 0.1);
+    cursor: pointer;
+}
+.buttons button:hover{
+    background-color: rgb(109, 109, 199);
+
+}
+.buttons .span{
+    width: 100;
+    grid-column:1 1;
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(22, 41, 66);
+}
+
+
+.buttons .plus{
+    height: 170%;
+    border-radius: 20px;
+    background-color: rgb(16, 255, 243);
+}
+.buttons .func{
+    border-radius: 20px;
+    background-color: rgb(16, 255, 243);
+    font-size: 30px;
+}
